@@ -77,13 +77,15 @@ class App extends React.Component {
 export default App;
 
 const MainContainer = styled.div`
-   background-color: #F8F8F8;
+   background: url()
+ 
    padding: 1em;
 
    .page-header{
       margin: 0;
       font-size: 3rem;
-      text-shadow: 1px 1px 3px gray;
+      font-weight: 900;
+      text-shadow: 1px 1px 2px gray;
    }
 
    input{
@@ -91,10 +93,14 @@ const MainContainer = styled.div`
       border-radius: 5px;
       padding: .5em;
       margin-right: 1em;
+      font-weight: 900;
+      box-shadow: 1px 1px 5px gray;
    }
    button{
       border: 4px solid #009B77;
       border-radius: 5px;
       padding: .5em 1em;
+      font-weight: 900;
+      box-shadow: 1px 1px 5px gray;
    }
 `;
