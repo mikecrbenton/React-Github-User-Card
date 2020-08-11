@@ -29,7 +29,7 @@ class App extends React.Component {
 
   handleChange = (e) => {
    this.setState(
-      { ...this.state, // <--- YOU ALMOST FORGOT THIS STEP - ASK VINCE ABOUT
+      { ...this.state, // <--- YOU ALMOST FORGOT THIS STEP - ASK VINCE ABOUT - **need for Redux** but not for React because it will cause a re-render
          searchText: e.target.value 
       });
    //would dynamic be [e.target.name] : e.target.value ?
