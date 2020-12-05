@@ -25,9 +25,11 @@ class DisplayCard extends React.Component {
             <div className="follower-container">
                {this.props.followers.map( (follower) => {
                   return <Follower>
-                           {console.log(follower)}
+                           <a href={follower.html_url}>
+                           {/* {console.log(follower)} */}
                            <p>{follower.login}</p>
                            <img src={follower.avatar_url}/>
+                           </a>
                         </Follower>
                })}
             </div>
